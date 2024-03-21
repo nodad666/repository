@@ -1,0 +1,19 @@
+class Algoritm:
+ def create(self, name, data):
+  self.name=name
+  self.data=data
+ def read(self):
+  print(self.name, self.data)
+ def update(self, name, data):
+  self.name=name
+  self.data=data
+ def delete(self):
+  self.name=None
+  self.data=None
+X=Algoritm()
+X.create('a',[[1],[2],[3],[4]])
+X.read()
+X.update('b',[[2],[4]])
+X.read()
+X.delete()
+X.read()
